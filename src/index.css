@@ -1,0 +1,33 @@
+/* This came with vite - basic theme stuff? */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Override bootstrap theme */
+:root {
+  --bs-primary: #f38ccf;
+  --bs-secondary: #9bd0ff;
+}
+
+html,
+body {
+  height: 100%;
+  background: #fff8fc;
+  color: #222;
+}
+
+.navbar .navbar-brand::before {
+  content: "🐰";
+  margin-right: 8px;
+}
+
+.card {
+  border-radius: 14px;
+}
+
+.container-narrow {
+  max-width: 860px;
+}
