@@ -7,9 +7,9 @@ function App() {
 
   // Index page / course list
   const [courses, setCourses] = useState([
-    { name: 'Bunnies 101', description: 'Intro to bunnies.', subject: 'Biology', credits: 3 },
-    { name: 'Bunnies 201', description: 'Deeper Dive into Bunnies.', subject: 'Biology', credits: 3 },
-    { name: 'Bunnies 301', description: 'Expert Level Bunny Research.', subject: 'Biology', credits: 3 },
+    { name: 'Course 1', description: 'description', subject: 'Biology', credits: 3 },
+    { name: 'Course 2', description: 'description', subject: 'Algebra', credits: 3 },
+    { name: 'Course 3', description: 'description', subject: 'English', credits: 3 },
   ])
 
   // Create course form
@@ -92,17 +92,17 @@ function App() {
 
             <div className="mb-3">
               <label htmlFor="courseName" className="form-label">Course Name</label>
-              <input id="courseName" className="form-control" type="text" value={courseName} onChange={(e) => setCourseName(e.target.value)} placeholder="Bunnies 101"></input>
+              <input id="courseName" className="form-control" type="text" value={courseName} onChange={(e) => setCourseName(e.target.value)} placeholder="College Algebra"></input>
             </div>
 
             <div className="mb-3">
               <label htmlFor="courseDescription" className="form-label">Course Description</label>
-              <textarea id="courseDescription" className="form-control" rows="3" value={courseDescription} onChange={(e) => setCourseDescription(e.target.value)} placeholder="Intro to bunnies."></textarea>
+              <textarea id="courseDescription" className="form-control" rows="3" value={courseDescription} onChange={(e) => setCourseDescription(e.target.value)} placeholder="A study of linear, quadratic, polynomial, and exponential functions. Emphasis on problem solving and mathematical reasoning."></textarea>
             </div>
 
             <div className="mb-3">
               <label htmlFor="courseSubject" className="form-label">Course Subject</label>
-              <input id="courseSubject" className="form-control" type="text" value={courseSubject} onChange={(e) => setCourseSubject(e.target.value)} placeholder="Biology"></input>
+              <input id="courseSubject" className="form-control" type="text" value={courseSubject} onChange={(e) => setCourseSubject(e.target.value)} placeholder="Mathematics"></input>
             </div>
 
             <div className="mb-3">
