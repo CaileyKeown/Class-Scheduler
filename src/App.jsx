@@ -35,9 +35,9 @@ function App() {
 
     console.log("New Course: ", newCourse);
 
-    const newCourses = courses.concat([newCourse])
+    const newCourses = [newCourse].concat(courses)
     setCourses(newCourses)
-    setView('index')
+    setCurrentPage('index')
     // courses = newCourses // CANNOT DO THIS IN REACT
     // MUST ****ALWAYS***** use the provided setWhatever functions.
   }
