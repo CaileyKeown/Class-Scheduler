@@ -47,7 +47,7 @@ function App() {
   // Navigation style logic - set active page button
   let homeNavigationButtonClass = 'btn'
   let createNavigationButtonClass = 'btn'
-
+  // Highlight the current page button
   if (currentPage === 'index') {
     homeNavigationButtonClass += ' btn-primary'
   }
